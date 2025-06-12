@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Informações Institucionais</title>
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    
 </head>
 <body>
     <div class="container-fluid">
@@ -16,210 +15,201 @@
             <div class="col-md-3 col-lg-2 admin-sidebar">
                 <div class="text-center mb-4">
                     <h4>Painel Admin</h4>
-                    <p class="text-muted">Prof. Dra. Rosiery da Silva Maia</p>
+                    <p class="text-muted">Rosiery da Silva Maia</p>
                 </div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">
-                            <i class="fas fa-tachometer-alt me-2"></i> Dashboard
-                        </a>
+                        <a class="nav-link active" href="index.html"><i class="fas fa-tachometer-alt me-2"></i> Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="mensagens.html">
-                            <i class="fas fa-envelope me-2"></i> Mensagens
-                        </a>
+                        <a class="nav-link" href="mensagens.html"><i class="fas fa-envelope me-2"></i> Mensagens</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="biografia.html">
-                            <i class="fas fa-user-edit me-2"></i> Biografia
-                        </a>
+                        <a class="nav-link" href="biografia.html"><i class="fas fa-user-edit me-2"></i> Biografia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="areas.html">
-                            <i class="fas fa-search me-2"></i> Áreas de Pesquisa
-                        </a>
+                        <a class="nav-link" href="areas.html"><i class="fas fa-search me-2"></i> Áreas de Pesquisa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projetos.html">
-                            <i class="fas fa-project-diagram me-2"></i> Projetos
-                        </a>
+                        <a class="nav-link" href="projetos.html"><i class="fas fa-project-diagram me-2"></i> Projetos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="publicacoes.html">
-                            <i class="fas fa-book me-2"></i> Publicações
-                        </a>
+                        <a class="nav-link" href="publicacoes.html"><i class="fas fa-book me-2"></i> Publicações</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="orientacoes.html">
-                            <i class="fas fa-graduation-cap me-2"></i> Orientações
-                        </a>
+                        <a class="nav-link" href="orientacoes.html"><i class="fas fa-graduation-cap me-2"></i> Orientações</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="informacoes.html">
-                            <i class="fas fa-university me-2"></i> Informações Institucionais
-                        </a>
+                        <a class="nav-link" href="informacoes.html"><i class="fas fa-university me-2"></i> Informações Institucionais</a>
                     </li>            
                     <li class="nav-item mt-4">
-                        <a class="nav-link text-danger" href="../../login.html">
-                            <i class="fas fa-sign-out-alt me-2"></i> Sair
-                        </a>
+                        <a class="nav-link text-danger" href="../../login.html"><i class="fas fa-sign-out-alt me-2"></i> Sair</a>
                     </li>
                 </ul>
             </div>
-    <!-- Main Content -->
-    <div class="col-md-9 col-lg-10 admin-main">
-        <h2 class="mb-4">Editar Informações Institucionais</h2>
-        
-        <ul class="nav nav-tabs mb-4" id="infoTabs">
-            <li class="nav-item">
-                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#contactTab">Página de Contato</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#footerTab">Rodapé</button>
-            </li>
-        </ul>
-        
-        <div class="tab-content">
-            <!-- Aba de Contato -->
-            <div class="tab-pane fade show active" id="contactTab">
-                <div class="card">
-                    <div class="card-body">
-                        <form id="contactInfoForm">
-                            <h4 class="mb-3">Informações de Contato</h4>
-                            <div class="mb-3">
-                                <label class="form-label">Email Institucional</label>
-                                <input type="email" class="form-control" value="maria.silva@universidade.edu.br" required>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Telefone Institucional</label>
-                                <input type="tel" class="form-control" value="+55 (31) 3409-1234">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Endereço</label>
-                                <textarea class="form-control" rows="3">Departamento de Ciência da Computação
+
+            <!-- Main Content -->
+            <div class="col-md-9 col-lg-10 admin-main">
+                <h2 class="mb-4">Editar Informações Institucionais</h2>
+                
+                <ul class="nav nav-tabs mb-4" id="infoTabs">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#contactTab">Página de Contato</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#footerTab">Rodapé</button>
+                    </li>
+                </ul>
+                
+                <div class="tab-content">
+                    <!-- Aba de Contato -->
+                    <div class="tab-pane fade show active" id="contactTab">
+                        <div class="card">
+                            <div class="card-body">
+                                <form id="contactInfoForm">
+                                    <h4 class="mb-3">Informações de Contato</h4>
+                                    <div class="mb-3">
+                                        <label class="form-label">Email Institucional</label>
+                                        <input type="email" class="form-control" value="maria.silva@universidade.edu.br" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Telefone Institucional</label>
+                                        <input type="tel" class="form-control" value="+55 (31) 3409-1234">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Endereço</label>
+                                        <textarea class="form-control" rows="3">Departamento de Ciência da Computação
 Universidade Federal de Minas Gerais
 Av. Antônio Carlos, 6627 - Pampulha
 Belo Horizonte - MG, CEP 31270-901</textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Horário de Atendimento</label>
+                                        <input type="text" class="form-control" value="Segunda a sexta, 14h às 18h">
+                                    </div>
+                                    <div class="text-end">
+                                        <button type="submit" class="btn btn-primary"><i class="fas fa-save me-2"></i>Salvar Alterações</button>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label">Horário de Atendimento</label>
-                                <input type="text" class="form-control" value="Segunda a sexta, 14h às 18h">
-                            </div>
-                            <div class="text-end">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fas fa-save me-2"></i>Salvar Alterações
-                                </button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
-            </div>
-            
-            <!-- Aba de Rodapé -->
-            <div class="tab-pane fade" id="footerTab">
-                <div class="card">
-                    <div class="card-body">
-                        <form id="footerInfoForm">
-                            <h4 class="mb-3">Informações do Rodapé</h4>
-                            <div class="mb-3">
-                                <label class="form-label">Texto do Rodapé (Esquerda)</label>
-                                <textarea class="form-control" rows="3">Universidade Federal de Minas Gerais
+                    
+                    <!-- Aba de Rodapé -->
+                    <div class="tab-pane fade" id="footerTab">
+                        <div class="card">
+                            <div class="card-body">
+                                <form id="footerInfoForm">
+                                    <h4 class="mb-3">Informações do Rodapé</h4>
+                                    <div class="mb-3">
+                                        <label class="form-label">Texto do Rodapé (Esquerda)</label>
+                                        <textarea class="form-control" rows="3">Universidade Federal de Minas Gerais
 Departamento de Ciência da Computação
 Instituto de Ciências Exatas
 Belo Horizonte - MG, Brasil</textarea>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Texto do Rodapé (Direita)</label>
-                                <textarea class="form-control" rows="2">© 2023 Prof. Dra. Maria Silva
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Texto do Rodapé (Direita)</label>
+                                        <textarea class="form-control" rows="2">© 2023 Prof. Dra. Maria Silva
 Todos os direitos reservados</textarea>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Links Adicionais</label>
-                                <div id="footerLinks">
-                                    <div class="row mb-2">
-                                        <div class="col-md-5">
-                                            <input type="text" class="form-control" placeholder="Texto do link" value="Lattes">
-                                        </div>
-                                        <div class="col-md-5">
-                                            <input type="url" class="form-control" placeholder="URL" value="http://lattes.cnpq.br/123456789">
-                                        </div>
-                                        <div class="col-md-2">
-                                            <button class="btn btn-danger w-100"><i class="fas fa-trash"></i></button>
-                                        </div>
                                     </div>
-                                    <div class="row mb-2">
-                                        <div class="col-md-5">
-                                            <input type="text" class="form-control" placeholder="Texto do link" value="ResearchGate">
+                                    <div class="mb-3">
+                                        <label class="form-label">Links Adicionais</label>
+                                        <div id="footerLinks">
+                                            <div class="row mb-2">
+                                                <div class="col-md-5">
+                                                    <input type="text" class="form-control" placeholder="Texto do link" value="Lattes">
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <input type="url" class="form-control" placeholder="URL" value="http://lattes.cnpq.br/123456789">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <button type="button" class="btn btn-danger w-100 remover-link"><i class="fas fa-trash"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-md-5">
+                                                    <input type="text" class="form-control" placeholder="Texto do link" value="ResearchGate">
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <input type="url" class="form-control" placeholder="URL" value="https://www.researchgate.net/profile/Maria_Silva">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <button type="button" class="btn btn-danger w-100 remover-link"><i class="fas fa-trash"></i></button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-5">
-                                            <input type="url" class="form-control" placeholder="URL" value="https://www.researchgate.net/profile/Maria_Silva">
-                                        </div>
-                                        <div class="col-md-2">
-                                            <button class="btn btn-danger w-100"><i class="fas fa-trash"></i></button>
-                                        </div>
+                                        <button type="button" class="btn btn-sm btn-outline-primary mt-2" id="addFooterLink"><i class="fas fa-plus me-2"></i>Adicionar Link</button>
                                     </div>
-                                </div>
-                                <button type="button" class="btn btn-sm btn-outline-primary mt-2" id="addFooterLink">
-                                    <i class="fas fa-plus me-2"></i>Adicionar Link
-                                </button>
+                                    <div class="text-end">
+                                        <button type="submit" class="btn btn-primary"><i class="fas fa-save me-2"></i>Salvar Alterações</button>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="text-end">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fas fa-save me-2"></i>Salvar Alterações
-                                </button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                </div> <!-- tab-content -->
+            </div> <!-- admin-main -->
+        </div> <!-- row -->
+    </div> <!-- container -->
 
-    <!-- Mesmos scripts do dashboard -->
     <script>
-        // Adicionar novo link ao rodapé
-        document.getElementById('addFooterLink').addEventListener('click', function() {
-            const newLink = document.createElement('div');
-            newLink.className = 'row mb-2';
-            newLink.innerHTML = `
-                <div class="col-md-5">
-                    <input type="text" class="form-control" placeholder="Texto do link">
-                </div>
-                <div class="col-md-5">
-                    <input type="url" class="form-control" placeholder="URL">
-                </div>
-                <div class="col-md-2">
-                    <button class="btn btn-danger w-100"><i class="fas fa-trash"></i></button>
-                </div>
-            `;
-            document.getElementById('footerLinks').appendChild(newLink);
-            
-            // Adicionar evento ao botão de remover
-            newLink.querySelector('button').addEventListener('click', function() {
-                this.closest('.row').remove();
+    document.addEventListener('DOMContentLoaded', function () {
+        function atualizarEventosRemocao() {
+            const botoesRemover = document.querySelectorAll('.remover-link');
+            botoesRemover.forEach(botao => {
+                botao.removeEventListener('click', handleRemover);
+                botao.addEventListener('click', handleRemover);
             });
-        });
-        
-        // Adicionar eventos aos botões de remover existentes
-        document.querySelectorAll('#footerLinks .btn-danger').forEach(btn => {
-            btn.addEventListener('click', function() {
-                this.closest('.row').remove();
+        }
+
+        function handleRemover(e) {
+            e.preventDefault();
+            const linha = e.target.closest('.row');
+            if (linha) linha.remove();
+        }
+
+        const botaoAdicionar = document.getElementById('addFooterLink');
+        if (botaoAdicionar) {
+            botaoAdicionar.addEventListener('click', function () {
+                const novoLink = document.createElement('div');
+                novoLink.className = 'row mb-2';
+                novoLink.innerHTML = `
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" placeholder="Texto do link">
+                    </div>
+                    <div class="col-md-5">
+                        <input type="url" class="form-control" placeholder="URL">
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-danger w-100 remover-link"><i class="fas fa-trash"></i></button>
+                    </div>
+                `;
+                document.getElementById('footerLinks').appendChild(novoLink);
+                atualizarEventosRemocao();
             });
-        });
-        
-        // Salvar informações de contato
-        document.getElementById('contactInfoForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Informações de contato atualizadas com sucesso!');
-            // Aqui seria uma chamada AJAX para salvar no servidor
-        });
-        
-        // Salvar informações do rodapé
-        document.getElementById('footerInfoForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Informações do rodapé atualizadas com sucesso!');
-            // Aqui seria uma chamada AJAX para salvar no servidor
-        });
+        }
+
+        const contatoForm = document.getElementById('contactInfoForm');
+        if (contatoForm) {
+            contatoForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                alert('Informações de contato atualizadas com sucesso!');
+            });
+        }
+
+        const rodapeForm = document.getElementById('footerInfoForm');
+        if (rodapeForm) {
+            rodapeForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                alert('Informações do rodapé atualizadas com sucesso!');
+            });
+        }
+
+        atualizarEventosRemocao();
+    });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,230 +1,192 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mensagens Recebidas</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
-   
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar -->
-            <div class="col-md-3 col-lg-2 admin-sidebar">
-                <div class="text-center mb-4">
-                    <h4>Painel Admin</h4>
-                    <p class="text-muted">Prof. Dra. Rosiery da Silva Maia</p>
-                </div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">
-                            <i class="fas fa-tachometer-alt me-2"></i> Dashboard
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mensagens.html">
-                            <i class="fas fa-envelope me-2"></i> Mensagens
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="biografia.html">
-                            <i class="fas fa-user-edit me-2"></i> Biografia
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="areas.html">
-                            <i class="fas fa-search me-2"></i> Áreas de Pesquisa
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projetos.html">
-                            <i class="fas fa-project-diagram me-2"></i> Projetos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="publicacoes.html">
-                            <i class="fas fa-book me-2"></i> Publicações
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="orientacoes.html">
-                            <i class="fas fa-graduation-cap me-2"></i> Orientações
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="informacoes.html">
-                            <i class="fas fa-university me-2"></i> Informações Institucionais
-                        </a>
-                    </li>
-                    <li class="nav-item mt-4">
-                        <a class="nav-link text-danger" href="../../login.html">
-                            <i class="fas fa-sign-out-alt me-2"></i> Sair
-                        </a>
-                    </li>
-                </ul>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3 col-lg-2 admin-sidebar">
+            <div class="text-center mb-4">
+                <h4>Painel Admin</h4>
+                <p class="text-muted">Rosiery da Silva Maia</p>
             </div>
-    <!-- Main Content -->
-    <div class="col-md-9 col-lg-10 admin-main">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2>Mensagens Recebidas</h2>
-            <button class="btn btn-danger" id="deleteAllBtn">
-                <i class="fas fa-trash me-2"></i>Limpar Todas
-            </button>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-tachometer-alt me-2"></i> Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="mensagens.html"><i class="fas fa-envelope me-2"></i> Mensagens</a></li>
+                <li class="nav-item"><a class="nav-link" href="biografia.html"><i class="fas fa-user-edit me-2"></i> Biografia</a></li>
+                <li class="nav-item"><a class="nav-link" href="areas.html"><i class="fas fa-search me-2"></i> Áreas de Pesquisa</a></li>
+                <li class="nav-item"><a class="nav-link" href="projetos.html"><i class="fas fa-project-diagram me-2"></i> Projetos</a></li>
+                <li class="nav-item"><a class="nav-link" href="publicacoes.html"><i class="fas fa-book me-2"></i> Publicações</a></li>
+                <li class="nav-item"><a class="nav-link" href="orientacoes.html"><i class="fas fa-graduation-cap me-2"></i> Orientações</a></li>
+                <li class="nav-item"><a class="nav-link" href="informacoes.html"><i class="fas fa-university me-2"></i> Informações Institucionais</a></li>
+                <li class="nav-item mt-4"><a class="nav-link text-danger" href="../../login.html"><i class="fas fa-sign-out-alt me-2"></i> Sair</a></li>
+            </ul>
         </div>
-        
-        <div class="card">
-            <div class="card-header">
-                <div class="row">
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Filtrar mensagens...">
-                    </div>
-                    <div class="col-md-6 text-end">
-                        <span class="badge bg-primary">Total: 15 mensagens</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th width="50px"></th>
-                                <th>Remetente</th>
-                                <th>Assunto</th>
-                                <th>Data</th>
-                                <th>Ações</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><input type="checkbox" class="form-check-input"></td>
-                                <td>João Silva</td>
-                                <td>Consulta sobre orientação</td>
-                                <td>10/05/2023</td>
-                                <td>
-                                    <button class="btn btn-sm btn-primary"><i class="fas fa-eye"></i></button>
-                                    <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="form-check-input"></td>
-                                <td>Maria Oliveira</td>
-                                <td>Parceria em pesquisa</td>
-                                <td>08/05/2023</td>
-                                <td>
-                                    <button class="btn btn-sm btn-primary"><i class="fas fa-eye"></i></button>
-                                    <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-                                </td>
-                            </tr>
-                            <!-- Mais mensagens... -->
-                        </tbody>
-                    </table>
-                </div>
-                
-                <nav aria-label="Page navigation">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1">Anterior</a>
-                        </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">Próxima</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        
-        <!-- Modal para visualizar mensagem -->
-        <div class="modal fade" id="viewMessageModal" tabindex="-1">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Mensagem de João Silva</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="mb-3">
-                            <strong>Email:</strong> joao.silva@email.com
-                        </div>
-                        <div class="mb-3">
-                            <strong>Data:</strong> 10/05/2023 14:30
-                        </div>
-                        <div class="mb-3">
-                            <strong>Assunto:</strong> Consulta sobre orientação
-                        </div>
-                        <div class="border p-3 rounded">
-                            <p>Prezada Professora Maria,</p>
-                            <p>Gostaria de saber se a senhora está aceitando novos orientandos para o próximo semestre. Tenho interesse em desenvolver pesquisa na área de PLN.</p>
-                            <p>Atenciosamente,<br>João Silva</p>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#replySection">
-                            <i class="fas fa-reply me-2"></i>Responder
-                        </button>
-                    </div>
 
+        <!-- Main Content -->
+        <div class="col-md-9 col-lg-10 admin-main">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Mensagens Recebidas</h2>
+                <button class="btn btn-danger" id="deleteAllBtn"><i class="fas fa-trash me-2"></i>Limpar Todas</button>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-6"><input type="text" class="form-control" placeholder="Filtrar mensagens..."></div>
+                        <div class="col-md-6 text-end"><span class="badge bg-primary">Total: 15 mensagens</span></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th width="50px"></th>
+                                    <th>Remetente</th>
+                                    <th>Assunto</th>
+                                    <th>Data</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" class="form-check-input"></td>
+                                    <td>João Silva</td>
+                                    <td>Consulta sobre orientação</td>
+                                    <td>10/05/2023</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="form-check-input"></td>
+                                    <td>Maria Oliveira</td>
+                                    <td>Parceria em pesquisa</td>
+                                    <td>08/05/2023</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary"><i class="fas fa-eye"></i></button>
+                                        <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Próxima</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Modal de Visualização -->
+            <div class="modal fade" id="viewMessageModal" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header"><h5 class="modal-title">Mensagem</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+                        <div class="modal-body"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#replySection"><i class="fas fa-reply me-2"></i>Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulário de resposta -->
+            <div class="collapse" id="replySection">
+                <div class="modal-body border-top">
+                    <h5 class="mb-3">Enviar Resposta</h5>
+                    <form id="replyForm">
+                        <div class="mb-3">
+                            <label class="form-label">Assunto</label>
+                            <input type="text" class="form-control" id="replySubject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="replyMessage" rows="5" required></textarea>
+                        </div>
+                        <div class="text-end">
+                            <button type="button" class="btn btn-outline-secondary me-2" data-bs-toggle="collapse" data-bs-target="#replySection">Cancelar</button>
+                            <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane me-2"></i>Enviar Resposta</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="collapse" id="replySection">
-    <div class="modal-body border-top">
-        <h5 class="mb-3">Enviar Resposta</h5>
-        <form id="replyForm">
-            <div class="mb-3">
-                <label class="form-label">Assunto</label>
-                <input type="text" class="form-control" id="replySubject" required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Mensagem</label>
-                <textarea class="form-control" id="replyMessage" rows="5" required></textarea>
-            </div>
-            <div class="text-end">
-                <button type="button" class="btn btn-outline-secondary me-2" data-bs-toggle="collapse" data-bs-target="#replySection">Cancelar</button>
-                <button type="submit" class="btn btn-primary">
-                    <i class="fas fa-paper-plane me-2"></i>Enviar Resposta
-                </button>
-            </div>
-        </form>
     </div>
 </div>
 
-    <!-- Mesmos scripts do dashboard -->
-    <script>
-        // Simulação de visualização de mensagem
-        document.querySelectorAll('.btn-primary').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const modal = new bootstrap.Modal(document.getElementById('viewMessageModal'));
-                modal.show();
-            });
-        });
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const modalElement = document.getElementById('viewMessageModal');
+    const modalTitle = modalElement.querySelector('.modal-title');
+    const modalBody = modalElement.querySelector('.modal-body');
 
-        // Simulação de exclusão
-        document.querySelectorAll('.btn-danger').forEach(btn => {
-            btn.addEventListener('click', function() {
-                if(confirm('Tem certeza que deseja excluir esta mensagem?')) {
-                    this.closest('tr').remove();
-                }
-            });
-        });
+    document.querySelectorAll('table .btn-primary').forEach(button => {
+        button.addEventListener('click', function () {
+            const row = this.closest('tr');
+            const remetente = row.children[1].textContent;
+            const assunto = row.children[2].textContent;
+            const data = row.children[3].textContent;
 
-        // Excluir todas selecionadas
-        document.getElementById('deleteAllBtn').addEventListener('click', function() {
-            if(confirm('Tem certeza que deseja excluir todas as mensagens selecionadas?')) {
-                document.querySelectorAll('input[type="checkbox"]:checked').forEach(checkbox => {
-                    checkbox.closest('tr').remove();
-                });
+            modalTitle.textContent = `Mensagem de ${remetente}`;
+            modalBody.innerHTML = `
+                <div class="mb-3"><strong>Email:</strong> ${remetente.toLowerCase().replace(" ", ".")}@email.com</div>
+                <div class="mb-3"><strong>Data:</strong> ${data} 14:30</div>
+                <div class="mb-3"><strong>Assunto:</strong> ${assunto}</div>
+                <div class="border p-3 rounded">
+                    <p>Prezada Professora,</p>
+                    <p>Esta é uma mensagem simulada enviada por ${remetente} sobre "${assunto}".</p>
+                    <p>Atenciosamente,<br>${remetente}</p>
+                </div>
+            `;
+            const modal = new bootstrap.Modal(modalElement);
+            modal.show();
+        });
+    });
+
+    document.querySelectorAll('table .btn-danger').forEach(button => {
+        button.addEventListener('click', function () {
+            if (confirm('Tem certeza que deseja excluir esta mensagem?')) {
+                this.closest('tr').remove();
             }
         });
-    </script>
+    });
+
+    document.getElementById('deleteAllBtn').addEventListener('click', function () {
+        if (confirm('Tem certeza que deseja excluir todas as mensagens selecionadas?')) {
+            document.querySelectorAll('input[type="checkbox"]:checked').forEach(cb => {
+                cb.closest('tr').remove();
+            });
+        }
+    });
+
+    document.getElementById('replyForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const assunto = document.getElementById('replySubject').value;
+        const mensagem = document.getElementById('replyMessage').value;
+        alert(`Resposta enviada!
+Assunto: ${assunto}
+Mensagem: ${mensagem}`);
+        this.reset();
+        bootstrap.Collapse.getInstance(document.getElementById('replySection')).hide();
+    });
+</script>
 </body>
 </html>
